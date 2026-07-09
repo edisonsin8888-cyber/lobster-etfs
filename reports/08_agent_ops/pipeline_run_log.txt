@@ -1,5 +1,5 @@
 Lobster Pipeline Run Logger
-Start Time: 2026-07-09 16:00:00
+Start Time: 2026-07-09 09:03:23
 
 Command:
 python scripts/run_all.py
@@ -7,8 +7,8 @@ python scripts/run_all.py
 Pipeline Status:
 Passed
 
-End Time: 2026-07-09 16:00:04
-Duration Seconds: 3.16
+End Time: 2026-07-09 09:03:36
+Duration Seconds: 12.26
 
 STDOUT:
 

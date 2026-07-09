@@ -1,14 +1,14 @@
 Lobster Auto Refresh Agent
-Start Time: 2026-07-09 15:59:43
+Start Time: 2026-07-09 09:03:17
 
 Step: Data Update Agent
 - Script: scripts/data_update_agent.py
 - Status: Passed
-- Duration Seconds: 17.53
+- Duration Seconds: 6.24
 
 STDOUT:
 Lobster Data Update Agent
-Run Time: 2026-07-09 15:59:43
+Run Time: 2026-07-09 09:03:22
 
 OK: SPY
 - Saved to: data/spy.csv
@@ -56,11 +56,11 @@ No stderr.
 Step: Data Quality Check Agent
 - Script: scripts/data_quality_check.py
 - Status: Passed
-- Duration Seconds: 0.26
+- Duration Seconds: 0.37
 
 STDOUT:
 Lobster Data Quality Check Agent
-Run Time: 2026-07-09 16:00:00
+Run Time: 2026-07-09 09:03:23
 
 Overall Data Quality Status: Passed
 - Passed: 5
@@ -86,11 +86,11 @@ No stderr.
 Step: Pipeline Run Logger
 - Script: scripts/pipeline_run_logger.py
 - Status: Passed
-- Duration Seconds: 3.18
+- Duration Seconds: 12.29
 
 STDOUT:
 Lobster Pipeline Run Logger
-Start Time: 2026-07-09 16:00:00
+Start Time: 2026-07-09 09:03:23
 
 Command:
 python scripts/run_all.py
@@ -98,8 +98,8 @@ python scripts/run_all.py
 Pipeline Status:
 Passed
 
-End Time: 2026-07-09 16:00:04
-Duration Seconds: 3.16
+End Time: 2026-07-09 09:03:36
+Duration Seconds: 12.26
 
 STDOUT:
 
@@ -191,11 +191,11 @@ No stderr.
 Step: System Status Agent
 - Script: scripts/lobster_system_status.py
 - Status: Passed
-- Duration Seconds: 0.02
+- Duration Seconds: 0.03
 
 STDOUT:
 Lobster System Status Agent
-Run Time: 2026-07-09 16:00:04
+Run Time: 2026-07-09 09:03:36
 
 System Status: Healthy
 - OK Files: 23
@@ -206,20 +206,20 @@ Critical Output Check
 - OK: reports/08_agent_ops/data_update_log.txt (687 bytes)
 - OK: reports/08_agent_ops/data_quality_report.csv (315 bytes)
 - OK: reports/08_agent_ops/data_quality_summary.txt (498 bytes)
-- OK: reports/08_agent_ops/pipeline_run_log.txt (2528 bytes)
+- OK: reports/08_agent_ops/pipeline_run_log.txt (2529 bytes)
 - OK: reports/06_score_and_monitor/gold_diversification_score.csv (361 bytes)
 - OK: reports/06_score_and_monitor/diversification_alert.txt (941 bytes)
 - OK: reports/06_score_and_monitor/ai_risk_monitor_report.txt (1950 bytes)
-- OK: reports/06_score_and_monitor/allocation_history.csv (8328 bytes)
+- OK: reports/06_score_and_monitor/allocation_history.csv (8321 bytes)
 - OK: reports/06_score_and_monitor/allocation_history_summary.txt (1215 bytes)
 - OK: reports/06_score_and_monitor/gold_signal_dashboard.txt (1490 bytes)
 - OK: reports/06_score_and_monitor/gold_dashboard_pack.md (2810 bytes)
-- OK: reports/06_score_and_monitor/gold_div_score_history.png (189417 bytes)
-- OK: reports/06_score_and_monitor/allocation_guidance_history.png (133104 bytes)
-- OK: reports/06_score_and_monitor/gld_risk_budget_curve.png (124342 bytes)
-- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1610 bytes)
+- OK: reports/06_score_and_monitor/gold_div_score_history.png (203103 bytes)
+- OK: reports/06_score_and_monitor/allocation_guidance_history.png (142322 bytes)
+- OK: reports/06_score_and_monitor/gld_risk_budget_curve.png (128149 bytes)
+- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1609 bytes)
 - OK: reports/07_lobster_watchlist/etf_watchlist_summary.txt (608 bytes)
-- OK: reports/07_lobster_watchlist/etf_score_table.csv (1242 bytes)
+- OK: reports/07_lobster_watchlist/etf_score_table.csv (1241 bytes)
 - OK: reports/07_lobster_watchlist/etf_score_summary.txt (880 bytes)
 - OK: reports/07_lobster_watchlist/lobster_dashboard.txt (1757 bytes)
 - OK: reports/07_lobster_watchlist/lobster_research_router.txt (2815 bytes)
@@ -238,11 +238,11 @@ No stderr.
 Step: Research Task Generator
 - Script: scripts/lobster_research_tasks.py
 - Status: Passed
-- Duration Seconds: 0.17
+- Duration Seconds: 0.33
 
 STDOUT:
 Lobster Research Task Generator
-Run Time: 2026-07-09 16:00:04
+Run Time: 2026-07-09 09:03:36
 
 1. Current Router Decision
 - Active Candidate: GLD
@@ -283,7 +283,7 @@ No stderr.
 Step: Notification Agent
 - Script: scripts/notification_agent.py
 - Status: Passed
-- Duration Seconds: 0.11
+- Duration Seconds: 0.03
 
 STDOUT:
 Notification Agent Completed
@@ -297,7 +297,7 @@ No stderr.
 Step: Email Notification Agent
 - Script: scripts/email_notification_agent.py
 - Status: Passed
-- Duration Seconds: 9.29
+- Duration Seconds: 2.29
 
 STDOUT:
 Email Notification Sent
@@ -310,6 +310,6 @@ No stderr.
 
 Final Auto Refresh Status
 - Overall Status: Passed
-- Total Duration Seconds: 30.55
+- Total Duration Seconds: 21.58
 - Completed Steps: 7 / 7
 - Failed Steps: 0
