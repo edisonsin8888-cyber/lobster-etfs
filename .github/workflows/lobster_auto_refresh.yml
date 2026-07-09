@@ -1,0 +1,46 @@
+name: Lobster ETF Auto Refresh
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 12 * * 5"
+
+permissions:
+  contents: write
+
+jobs:
+  auto-refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Lobster Auto Refresh Agent
+        run: |
+          python scripts/lobster_auto_refresh.py
+
+      - name: Commit updated data and reports
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data reports
+
+          if git diff --cached --quiet; then
+            echo "No data or report changes to commit."
+          else
+            git commit -m "Auto refresh ETF data and reports"
+            git push
+          fi
