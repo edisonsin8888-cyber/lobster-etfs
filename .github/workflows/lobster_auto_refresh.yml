@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: "0 12 * * 5"
+    - cron: "0 12 * * 1-5"
 
 permissions:
   contents: write
@@ -32,7 +32,7 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
-        
+
         run: |
           python scripts/lobster_auto_refresh.py
 
@@ -40,6 +40,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git pull --rebase origin main || true
 
           git add data reports
 
