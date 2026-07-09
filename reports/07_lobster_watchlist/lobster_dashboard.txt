@@ -4,16 +4,16 @@ Lobster ETF Research Dashboard v2
 Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD defensive deep-dive analysis, and XLK growth-sleeve monitoring.
 
 2. ETF Watchlist Snapshot
-- Best 3M performer: XLK (28.03%)
-- Weakest 3M performer: GLD (-13.83%)
-- Highest-volatility ETF: XLK (32.54%)
+- Best 3M performer: XLK (30.84%)
+- Weakest 3M performer: GLD (-13.61%)
+- Highest-volatility ETF: XLK (32.35%)
 
 3. ETF Score Ranking
-- Top ETF by Final Score: SPY (74.43/100, Constructive)
-- Weakest ETF by Final Score: GLD (29.26/100, Defensive)
+- Top ETF by Final Score: SPY (75.39/100, Constructive)
+- Weakest ETF by Final Score: GLD (29.83/100, Defensive)
 
 4. Defensive Sleeve Update: GLD
-- ETF Score: 29.26/100
+- ETF Score: 29.83/100
 - ETF Stance: Defensive
 - Gold Diversification Score: 53.89/100
 - Score Status: Mixed
@@ -22,7 +22,7 @@ Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD d
 - Recommended Strategic Range: 0%–5%
 
 5. Growth Sleeve Update: XLK
-- ETF Score: 65.84/100
+- ETF Score: 65.94/100
 - ETF Stance: Neutral
 - XLK 3M Return: 28.03%
 - SPY 3M Return: 10.26%

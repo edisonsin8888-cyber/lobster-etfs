@@ -1,43 +1,43 @@
 Lobster Auto Refresh Agent
-Start Time: 2026-07-09 09:03:17
+Start Time: 2026-07-09 18:26:45
 
 Step: Data Update Agent
 - Script: scripts/data_update_agent.py
 - Status: Passed
-- Duration Seconds: 6.24
+- Duration Seconds: 2.89
 
 STDOUT:
 Lobster Data Update Agent
-Run Time: 2026-07-09 09:03:22
+Run Time: 2026-07-09 18:26:46
 
 OK: SPY
 - Saved to: data/spy.csv
-- Latest Date: 2026-07-08
-- Rows: 1131
+- Latest Date: 2026-07-09
+- Rows: 1132
 - Message: Downloaded successfully.
 
 OK: QQQ
 - Saved to: data/qqq.csv
-- Latest Date: 2026-07-08
-- Rows: 1131
+- Latest Date: 2026-07-09
+- Rows: 1132
 - Message: Downloaded successfully.
 
 OK: GLD
 - Saved to: data/gld.csv
-- Latest Date: 2026-07-08
-- Rows: 1131
+- Latest Date: 2026-07-09
+- Rows: 1132
 - Message: Downloaded successfully.
 
 OK: TLT
 - Saved to: data/tlt.csv
-- Latest Date: 2026-07-08
-- Rows: 1131
+- Latest Date: 2026-07-09
+- Rows: 1132
 - Message: Downloaded successfully.
 
 OK: XLK
 - Saved to: data/xlk.csv
-- Latest Date: 2026-07-08
-- Rows: 1131
+- Latest Date: 2026-07-09
+- Rows: 1132
 - Message: Downloaded successfully.
 
 Summary
@@ -56,11 +56,11 @@ No stderr.
 Step: Data Quality Check Agent
 - Script: scripts/data_quality_check.py
 - Status: Passed
-- Duration Seconds: 0.37
+- Duration Seconds: 0.36
 
 STDOUT:
 Lobster Data Quality Check Agent
-Run Time: 2026-07-09 09:03:23
+Run Time: 2026-07-09 18:26:48
 
 Overall Data Quality Status: Passed
 - Passed: 5
@@ -68,11 +68,11 @@ Overall Data Quality Status: Passed
 - Failed: 0
 
 Ticker-Level Results
-- SPY: Passed | Latest Date: 2026-07-08 | Rows: 1131 | Issues: None
-- QQQ: Passed | Latest Date: 2026-07-08 | Rows: 1131 | Issues: None
-- GLD: Passed | Latest Date: 2026-07-08 | Rows: 1131 | Issues: None
-- TLT: Passed | Latest Date: 2026-07-08 | Rows: 1131 | Issues: None
-- XLK: Passed | Latest Date: 2026-07-08 | Rows: 1131 | Issues: None
+- SPY: Passed | Latest Date: 2026-07-09 | Rows: 1132 | Issues: None
+- QQQ: Passed | Latest Date: 2026-07-09 | Rows: 1132 | Issues: None
+- GLD: Passed | Latest Date: 2026-07-09 | Rows: 1132 | Issues: None
+- TLT: Passed | Latest Date: 2026-07-09 | Rows: 1132 | Issues: None
+- XLK: Passed | Latest Date: 2026-07-09 | Rows: 1132 | Issues: None
 
 Saved to reports/08_agent_ops/data_quality_report.csv
 Saved to reports/08_agent_ops/data_quality_summary.txt
@@ -86,11 +86,11 @@ No stderr.
 Step: Pipeline Run Logger
 - Script: scripts/pipeline_run_logger.py
 - Status: Passed
-- Duration Seconds: 12.29
+- Duration Seconds: 6.93
 
 STDOUT:
 Lobster Pipeline Run Logger
-Start Time: 2026-07-09 09:03:23
+Start Time: 2026-07-09 18:26:48
 
 Command:
 python scripts/run_all.py
@@ -98,8 +98,8 @@ python scripts/run_all.py
 Pipeline Status:
 Passed
 
-End Time: 2026-07-09 09:03:36
-Duration Seconds: 12.26
+End Time: 2026-07-09 18:26:55
+Duration Seconds: 6.90
 
 STDOUT:
 
@@ -195,7 +195,7 @@ Step: System Status Agent
 
 STDOUT:
 Lobster System Status Agent
-Run Time: 2026-07-09 09:03:36
+Run Time: 2026-07-09 18:26:55
 
 System Status: Healthy
 - OK Files: 23
@@ -206,26 +206,26 @@ Critical Output Check
 - OK: reports/08_agent_ops/data_update_log.txt (687 bytes)
 - OK: reports/08_agent_ops/data_quality_report.csv (315 bytes)
 - OK: reports/08_agent_ops/data_quality_summary.txt (498 bytes)
-- OK: reports/08_agent_ops/pipeline_run_log.txt (2529 bytes)
+- OK: reports/08_agent_ops/pipeline_run_log.txt (2528 bytes)
 - OK: reports/06_score_and_monitor/gold_diversification_score.csv (361 bytes)
 - OK: reports/06_score_and_monitor/diversification_alert.txt (941 bytes)
 - OK: reports/06_score_and_monitor/ai_risk_monitor_report.txt (1950 bytes)
-- OK: reports/06_score_and_monitor/allocation_history.csv (8321 bytes)
+- OK: reports/06_score_and_monitor/allocation_history.csv (8322 bytes)
 - OK: reports/06_score_and_monitor/allocation_history_summary.txt (1215 bytes)
 - OK: reports/06_score_and_monitor/gold_signal_dashboard.txt (1490 bytes)
 - OK: reports/06_score_and_monitor/gold_dashboard_pack.md (2810 bytes)
-- OK: reports/06_score_and_monitor/gold_div_score_history.png (203103 bytes)
+- OK: reports/06_score_and_monitor/gold_div_score_history.png (203086 bytes)
 - OK: reports/06_score_and_monitor/allocation_guidance_history.png (142322 bytes)
 - OK: reports/06_score_and_monitor/gld_risk_budget_curve.png (128149 bytes)
-- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1609 bytes)
+- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1613 bytes)
 - OK: reports/07_lobster_watchlist/etf_watchlist_summary.txt (608 bytes)
-- OK: reports/07_lobster_watchlist/etf_score_table.csv (1241 bytes)
+- OK: reports/07_lobster_watchlist/etf_score_table.csv (1242 bytes)
 - OK: reports/07_lobster_watchlist/etf_score_summary.txt (880 bytes)
 - OK: reports/07_lobster_watchlist/lobster_dashboard.txt (1757 bytes)
 - OK: reports/07_lobster_watchlist/lobster_research_router.txt (2815 bytes)
-- OK: reports/07_lobster_watchlist/lobster_weekly_memo.txt (2912 bytes)
-- OK: reports/08_growth_sleeve/xlk_vs_spy_summary.csv (616 bytes)
-- OK: reports/08_growth_sleeve/xlk_growth_monitor.txt (1010 bytes)
+- OK: reports/07_lobster_watchlist/lobster_weekly_memo.txt (2917 bytes)
+- OK: reports/08_growth_sleeve/xlk_vs_spy_summary.csv (620 bytes)
+- OK: reports/08_growth_sleeve/xlk_growth_monitor.txt (1014 bytes)
 
 Saved to reports/08_agent_ops/lobster_system_status.txt
 
@@ -242,29 +242,29 @@ Step: Research Task Generator
 
 STDOUT:
 Lobster Research Task Generator
-Run Time: 2026-07-09 09:03:36
+Run Time: 2026-07-09 18:26:55
 
 1. Current Router Decision
 - Active Candidate: GLD
-- Router v2 Score: 101.24
+- Router v2 Score: 101.44
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. Generated Research Tasks
 
 Priority 1: Continue monitoring GLD as the active router candidate
-- Reason: Router v2 selected GLD. Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available. Router score: 101.24.
+- Reason: Router v2 selected GLD. Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available. Router score: 101.44.
 
 Priority 2: Maintain GLD defensive sleeve review
 - Reason: Gold Engine status is Mixed, alert level is Red, allocation stance is Defensive, and recommended range is 0%–5%. Gold Diversification Score: 53.89/100.
 
 Priority 3: Track XLK growth sleeve risk
-- Reason: XLK Growth Sleeve Score is 67.76/100. Risk flag: High Growth Risk. Tactical stance: Neutral Growth Sleeve. XLK 3M excess return vs SPY: 17.76%.
+- Reason: XLK Growth Sleeve Score is 72.18/100. Risk flag: High Growth Risk. Tactical stance: Constructive Growth Sleeve. XLK 3M excess return vs SPY: 20.33%.
 
 Priority 4: Review strongest ETF score candidate: SPY
-- Reason: SPY has the highest Final ETF Score at 74.43/100 with stance Constructive.
+- Reason: SPY has the highest Final ETF Score at 75.39/100 with stance Constructive.
 
 Priority 5: Review weakest ETF score candidate: GLD
-- Reason: GLD has the lowest Final ETF Score at 29.26/100 with stance Defensive.
+- Reason: GLD has the lowest Final ETF Score at 29.83/100 with stance Defensive.
 
 3. Suggested System Extension
 If GLD remains the active router candidate, keep the Gold Engine as the completed defensive module and consider building a TLT rate-sensitive defensive module next.
@@ -297,7 +297,7 @@ No stderr.
 Step: Email Notification Agent
 - Script: scripts/email_notification_agent.py
 - Status: Passed
-- Duration Seconds: 2.29
+- Duration Seconds: 1.57
 
 STDOUT:
 Email Notification Sent
@@ -310,6 +310,6 @@ No stderr.
 
 Final Auto Refresh Status
 - Overall Status: Passed
-- Total Duration Seconds: 21.58
+- Total Duration Seconds: 12.13
 - Completed Steps: 7 / 7
 - Failed Steps: 0

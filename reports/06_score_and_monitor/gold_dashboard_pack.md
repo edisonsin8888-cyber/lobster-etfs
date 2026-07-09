@@ -17,15 +17,15 @@ GLD still offers some diversification value, but current allocation conditions r
 - Best Marginal Step: 0% to 5%
 
 ## 4. Why the Current Allocation Stance Looks This Way
-The current allocation stance is constrained mainly by elevated alert level, weak allocation guidance score (40.00/100), high GLD/SPY volatility ratio (2.39), weak stress-period return support (-0.00%).
+The current allocation stance is constrained mainly by elevated alert level, weak allocation guidance score (40.00/100), high GLD/SPY volatility ratio (2.38), weak stress-period return support (-0.00%).
 
 ## 5. Historical Allocation Evidence
 - Latest historical date: 2026-07-31
-- Historical gold diversification score: 40.26/100
+- Historical gold diversification score: 40.31/100
 - Historical status: Mixed
 - Historical alert level: Red
-- Historical average GLD-equity correlation: 0.37
-- Historical GLD/SPY volatility ratio: 2.39
+- Historical average GLD-equity correlation: 0.38
+- Historical GLD/SPY volatility ratio: 2.38
 - Historical stress return gap: -0.00%
 
 ## 6. Historical Trend Verdict
