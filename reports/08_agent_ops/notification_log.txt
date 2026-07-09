@@ -1,0 +1,11 @@
+Lobster Notification Agent
+Run Time: 2026-07-09 11:01:59
+
+Detected Status: Failed
+Notification Title: Lobster ETF Agent
+Notification Message: Auto refresh failed. Please check the logs.
+
+Notification Result
+- Return Code: 0
+- STDOUT: No stdout.
+- STDERR: No stderr.

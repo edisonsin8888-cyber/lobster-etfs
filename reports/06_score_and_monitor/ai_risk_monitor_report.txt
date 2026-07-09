@@ -1,0 +1,43 @@
+AI Portfolio Risk Monitor v4.4
+
+Gold Diversification Score: 53.89/100
+Diversification Status: Mixed
+
+Key Signals:
+- Average GLD-equity rolling correlation: 0.60
+- GLD / SPY rolling volatility ratio: 1.76
+- GLD stress return minus SPY stress return: 0.75%
+- GLD portfolio risk contribution: 31.17%
+
+Regime Impact:
+- Stress Days: total return impact 2.08%; drawdown impact 1.68%
+- Normal Days: total return impact -1.54%
+- Strong Days: total return impact -1.04%
+
+Risk Budget:
+- 10% GLD: 12.45% risk contribution
+- 15% GLD: 21.80% risk contribution
+- 25% GLD: 42.54% risk contribution
+
+Marginal Allocation Efficiency:
+     Range Return Change Volatility Change Drawdown Change Risk Contribution Change Efficiency Score
+  0% to 5%         0.33%            -0.12%          -0.31%                    4.97%            -1.59
+ 5% to 10%         0.31%             0.04%          -0.32%                    7.49%            -2.54
+10% to 15%         0.29%             0.19%          -0.32%                    9.35%            -3.38
+15% to 20%         0.27%             0.34%          -0.33%                   10.32%            -3.90
+20% to 25%         0.25%             0.48%          -0.34%                   10.41%            -4.10
+
+Dynamic Allocation Guidance:
+- Allocation Guidance Score: 70.00/100
+- Recommendation Confidence: High
+- Best marginal step: 0% to 5%
+- Recommended strategic range: 5%–15%
+- 5%–10%: efficient diversification zone
+- 10%–15%: acceptable tactical range
+- 20%–25%: aggressive range; GLD consumes disproportionate risk budget
+
+Allocation Rationale:
+The best marginal step identifies the single most efficient incremental GLD increase. The recommended strategic range reflects the broader allocation zone supported by stress-regime protection and risk-budget control.
+
+Research Note:
+This monitor is not a trading signal. It is a research tool for tracking GLD's diversification conditions within a multi-asset ETF portfolio.
