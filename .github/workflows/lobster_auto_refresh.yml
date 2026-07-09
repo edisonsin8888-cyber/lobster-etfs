@@ -28,6 +28,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Lobster Auto Refresh Agent
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
+        
         run: |
           python scripts/lobster_auto_refresh.py
 

@@ -10,6 +10,11 @@ Notification Result
 - STDOUT: No stdout.
 - STDERR: No stderr.
 ====================
-2026-07-09 04:05:16.660301
-Mode: Cloud Environment
-Status: Logged only
+2026-07-09 12:01:15.303232
+Mode: macOS notification
+Status: Sent
+
+====================
+2026-07-09 16:00:04.348845
+Mode: macOS notification
+Status: Sent
