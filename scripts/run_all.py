@@ -6,19 +6,65 @@ import pandas as pd
 from gold_utils import score_status, allocation_stance
 
 PIPELINE = [
+
     ("Gold Diversification Score", "scripts/gold_diversification_score.py"),
+
     ("Diversification Alert", "scripts/diversification_alert.py"),
+
     ("AI Risk Monitor", "scripts/ai_risk_monitor.py"),
+
     ("Allocation History Tracker", "scripts/allocation_history_tracker.py"),
+
+
+    # Gold Research Layer
+
     ("Gold Signal Dashboard", "scripts/gold_signal_dashboard.py"),
+
     ("Gold Dashboard Charts", "scripts/gold_dashboard_charts.py"),
+
     ("Gold Dashboard Pack", "scripts/gold_dashboard_pack.py"),
+
+
+    # ETF Monitoring Layer
+
     ("ETF Watchlist Monitor", "scripts/etf_watchlist_monitor.py"),
+
     ("ETF Score Engine", "scripts/etf_score_engine.py"),
+
+
+    # Lobster Research Agent Layer
+
     ("Lobster Dashboard", "scripts/lobster_dashboard.py"),
+
     ("Lobster Research Router", "scripts/lobster_research_router.py"),
+
     ("XLK Growth Monitor", "scripts/xlk_growth_monitor.py"),
+
     ("Lobster Weekly Memo", "scripts/lobster_weekly_memo.py"),
+
+
+    # Interpretation Layer
+
+    (
+        "Metric Interpretation Engine",
+        "scripts/metric_interpretation_engine.py"
+    ),
+
+
+    # AI Analyst Layer
+
+    (
+        "AI Portfolio Commentary",
+        "scripts/ai_portfolio_commentary.py"
+    ),
+
+
+    # Web Layer
+
+    (
+        "Web Dashboard Generator",
+        "scripts/generate_web_dashboard.py"
+    ),
 ]
 
 EXPECTED_OUTPUTS = [
@@ -42,6 +88,9 @@ EXPECTED_OUTPUTS = [
     "reports/08_growth_sleeve/xlk_vs_spy_summary.csv",
     "reports/08_growth_sleeve/xlk_growth_monitor.txt",
     "reports/07_lobster_watchlist/lobster_weekly_memo.txt",
+    "reports/08_agent_ops/metric_interpretation.txt",
+    "reports/08_agent_ops/ai_portfolio_commentary.txt",
+    "docs/dashboard.html",
 ]
 
 BASE = Path("reports/06_score_and_monitor")

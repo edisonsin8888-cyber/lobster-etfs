@@ -1,0 +1,203 @@
+
+AI Portfolio Commentary
+
+Generated Time:
+2026-07-10 17:09:57
+
+
+Portfolio Overview:
+
+The system currently evaluates ETF allocation opportunities
+through diversification analysis, risk monitoring, and research routing.
+
+
+Gold Defensive Sleeve:
+
+Gold ETF Research Dashboard v2.2
+
+1. Research Verdict
+GLD retains some diversification value, but allocation conditions are weak. Current supported range: 0%–5%.
+
+2. Current Monitor Snapshot
+- Gold Diversification Score: 53.89/100
+- Score Status: Mixed
+- Alert Level: Red
+- Diversification Trend: Improving
+
+3. Current Allocation View
+- Allocation Guidance Score: 40.00/100
+- Allocation Stance: Defensive
+- Recommendation Confidence: Low
+- Recommended Strategic Range: 0%–5%
+- Best Marginal Step: 0% to 5%
+
+4. Allocation Driver Summary
+The defensive allocation view is mainly driven by elevated alert level, low allocation guidance score, high GLD/SPY volatility ratio, weak stress-period return support.
+
+5. Latest Historical Allocation Snapshot
+- Historical Date: 2026-07-31
+- Historical Gold Diversification Score: 40.26/100
+- Historical Status: Mixed
+- Historical Alert Level: Red
+- Historical Average GLD-equity Correlation: 0.37
+- Historical GLD/SPY Volatility Ratio: 2.39
+- Historical Stress Return Gap: -0.00%
+
+6. Historical Trend Diagnostics
+- One-month historical score change: 1.22
+- One-month allocation guidance score change: 0.00
+- Previous strategic range: 0%–5%
+- Current strategic range: 0%–5%
+- Previous alert level: Red
+- Current alert level: Red
+
+7. Research Use
+Run scripts/run_all.py to refresh the full pipeline. Use this dashboard as the top-level project view, then read the monitor, alert, weekly memo, and allocation history files for deeper diagnostics.
+
+
+
+Risk Assessment:
+
+AI Portfolio Risk Monitor v4.4
+
+Gold Diversification Score: 53.89/100
+Diversification Status: Mixed
+
+Key Signals:
+- Average GLD-equity rolling correlation: 0.60
+- GLD / SPY rolling volatility ratio: 1.76
+- GLD stress return minus SPY stress return: 0.75%
+- GLD portfolio risk contribution: 31.17%
+
+Regime Impact:
+- Stress Days: total return impact 2.08%; drawdown impact 1.68%
+- Normal Days: total return impact -1.54%
+- Strong Days: total return impact -1.04%
+
+Risk Budget:
+- 10% GLD: 12.45% risk contribution
+- 15% GLD: 21.80% risk contribution
+- 25% GLD: 42.54% risk contribution
+
+Marginal Allocation Efficiency:
+     Range Return Change Volatility Change Drawdown Change Risk Contribution Change Efficiency Score
+  0% to 5%         0.33%            -0.12%          -0.31%                    4.97%            -1.59
+ 5% to 10%         0.31%             0.04%          -0.32%                    7.49%            -2.54
+10% to 15%         0.29%             0.19%          -0.32%                    9.35%            -3.38
+15% to 20%         0.27%             0.34%          -0.33%                   10.32%            -3.90
+20% to 25%         0.25%             0.48%          -0.34%                   10.41%            -4.10
+
+Dynamic Allocation Guidance:
+- Allocation Guidance Score: 70.00/100
+- Recommendation Confidence: High
+- Best marginal step: 0% to 5%
+- Recommended strategic range: 5%–15%
+- 5%–10%: efficient diversification zone
+- 10%–15%: acceptable tactical range
+- 20%–25%: aggressive range; GLD consumes disproportionate risk budget
+
+Allocation Rationale:
+The best marginal step identifies the single most efficient incremental GLD increase. The recommended strategic range reflects the broader allocation zone supported by stress-regime protection and risk-budget control.
+
+Research Note:
+This monitor is not a trading signal. It is a research tool for tracking GLD's diversification conditions within a multi-asset ETF portfolio.
+
+
+
+Research Priority:
+
+Lobster Research Router v2
+
+1. Next Deep-Dive Candidate
+- ETF: GLD
+- Role Tag: Defensive Diversification Sleeve
+- Research Priority: High
+- ETF Stance: Defensive
+- Final ETF Score: 29.26/100
+- Deep-Dive Status: Completed Deep-Dive Module
+- Router v2 Score: 101.24
+- Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
+
+2. Ranked Research Queue
+1. GLD
+- Role Tag: Defensive Diversification Sleeve
+- Research Priority: High
+- ETF Stance: Defensive
+- Final ETF Score: 29.26/100
+- Momentum Flag: Weak
+- Risk Flag: High Risk
+- 3M Return: -13.83%
+- 3M Max Drawdown: -17.94%
+- Deep-Dive Status: Completed Deep-Dive Module
+- Router v2 Score: 101.24
+- Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
+
+2. XLK
+- Role Tag: Growth / Sector Sleeve
+- Research Priority: Medium
+- ETF Stance: Neutral
+- Final ETF Score: 65.84/100
+- Momentum Flag: Strong
+- Risk Flag: High Risk
+- 3M Return: 28.03%
+- 3M Max Drawdown: -10.89%
+- Deep-Dive Status: Light Deep-Dive Candidate
+- Router v2 Score: 85.05
+- Router Reason: strong momentum, elevated risk, growth-sleeve monitor candidate
+
+3. QQQ
+- Role Tag: Growth / Sector Sleeve
+- Research Priority: Medium
+- ETF Stance: Constructive
+- Final ETF Score: 73.90/100
+- Momentum Flag: Strong
+- Risk Flag: Normal
+- 3M Return: 17.38%
+- 3M Max Drawdown: -7.03%
+- Deep-Dive Status: Future Growth Module Candidate
+- Router v2 Score: 80.87
+- Router Reason: strong ETF score, strong momentum
+
+4. TLT
+- Role Tag: Rate-Sensitive Defensive Sleeve
+- Research Priority: Medium
+- ETF Stance: Neutral
+- Final ETF Score: 60.60/100
+- Momentum Flag: Weak
+- Risk Flag: Defensive
+- 3M Return: -2.95%
+- 3M Max Drawdown: -4.80%
+- Deep-Dive Status: Future Defensive Module Candidate
+- Router v2 Score: 77.21
+- Router Reason: weak momentum, negative 3M return
+
+5. SPY
+- Role Tag: Core Equity Sleeve
+- Research Priority: Low
+- ETF Stance: Constructive
+- Final ETF Score: 74.43/100
+- Momentum Flag: Strong
+- Risk Flag: Defensive
+- 3M Return: 10.26%
+- 3M Max Drawdown: -4.49%
+- Deep-Dive Status: Benchmark / Core Reference
+- Router v2 Score: 52.05
+- Router Reason: strong ETF score, strong momentum
+
+3. Router v2 Interpretation
+The Router v2 combines ETF attractiveness score, watchlist priority, portfolio role, risk condition, momentum condition, recent deterioration, and deep-dive module availability. This gives Lobster a stronger research routing layer than the original rule-based router.
+
+4. Current System Link
+If GLD remains the top-ranked ETF, the completed Gold Engine remains the active deep-dive module. If XLK ranks highly, it becomes the next growth-sleeve monitoring candidate for the v2 system.
+
+
+
+Investment Interpretation:
+
+The portfolio maintains a risk-aware allocation framework.
+Gold is monitored as a defensive diversification component,
+while equity growth exposure requires continuous evaluation
+under changing market conditions.
+
+The research engine prioritizes assets with significant
+risk-return characteristics for further investigation.
