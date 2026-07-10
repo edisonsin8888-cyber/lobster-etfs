@@ -1,0 +1,32 @@
+
+Metric Interpretation Report
+
+
+Gold Diversification Score:
+
+62.07
+
+Interpretation:
+
+Moderate diversification benefit. Gold contributes positively but requires continued monitoring.
+
+
+
+Alert Status:
+
+RED
+
+Interpretation:
+
+Multiple risk indicators indicate elevated stress. Defensive positioning should be considered.
+
+
+
+Recommended Allocation:
+
+0%–5%.
+
+Interpretation:
+
+A conservative allocation range is suggested because current diversification contribution remains limited.
+

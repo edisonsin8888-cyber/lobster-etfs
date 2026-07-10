@@ -25,8 +25,8 @@ The current Router v2 deep-dive candidate is GLD.
 4. Defensive Sleeve Update: GLD
 - GLD ETF Score: 29.83/100
 - GLD ETF Stance: Defensive
-- Gold Diversification Score: 53.89/100
-- Score Status: Mixed
+- Gold Diversification Score: 62.07/100
+- Score Status: Moderate
 - Alert Level: Red
 - Allocation Stance: Defensive
 - Recommended Strategic Range: 0%–5%

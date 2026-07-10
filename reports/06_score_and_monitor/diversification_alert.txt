@@ -1,0 +1,23 @@
+Enhanced Rolling Diversification Alert v1
+
+Alert Level: Red
+Diversification Trend: Improving
+
+Traffic-Light Diagnostics:
+- Correlation signal: Red | value: 0.62
+- Volatility signal: Red | value: 1.79
+- Score signal: Yellow | value: 62.07/100
+
+Trend Diagnostics:
+- Change in GLD-equity correlation versus recent 20-day average: -0.12
+- Trend reason: GLD-equity correlation has declined versus its recent 20-day average.
+
+Main Alert Driver:
+GLD-equity rolling correlation is the main alert driver.
+Reason: High correlation weakens GLD's diversification role.
+
+Interpretation:
+The current alert level is red. GLD's diversification condition is improving, but the main risk factor should still be monitored closely.
+
+Research Action Note:
+Focus on whether GLD-equity correlation remains elevated and whether GLD volatility continues to stay high relative to SPY. These are the key factors that can weaken GLD's role as a diversification sleeve.

@@ -15,8 +15,8 @@ Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD d
 4. Defensive Sleeve Update: GLD
 - ETF Score: 29.83/100
 - ETF Stance: Defensive
-- Gold Diversification Score: 53.89/100
-- Score Status: Mixed
+- Gold Diversification Score: 62.07/100
+- Score Status: Moderate
 - Alert Level: Red
 - Allocation Stance: Defensive
 - Recommended Strategic Range: 0%–5%
@@ -24,17 +24,17 @@ Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD d
 5. Growth Sleeve Update: XLK
 - ETF Score: 65.94/100
 - ETF Stance: Neutral
-- XLK 3M Return: 28.03%
-- SPY 3M Return: 10.26%
-- XLK 3M Excess Return: 17.76%
-- XLK Volatility Premium: 18.72%
-- Growth Sleeve Score: 67.76/100
+- XLK 3M Return: 30.84%
+- SPY 3M Return: 10.51%
+- XLK 3M Excess Return: 20.33%
+- XLK Volatility Premium: 19.32%
+- Growth Sleeve Score: 72.18/100
 - Growth Sleeve Risk Flag: High Growth Risk
-- Tactical Growth Stance: Neutral Growth Sleeve
+- Tactical Growth Stance: Constructive Growth Sleeve
 
 6. Router v2 Decision
 - Next Deep-Dive Candidate: GLD
-- Router v2 Score: 101.24
+- Router v2 Score: 101.44
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 7. Portfolio Research Stance

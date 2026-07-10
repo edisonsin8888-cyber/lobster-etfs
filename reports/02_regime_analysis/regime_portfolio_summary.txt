@@ -1,0 +1,8 @@
+Regime Portfolio Delta Summary
+
+Best regime for GLD based on drawdown improvement: Stress Days
+Weakest regime for GLD based on total return impact: Strong Days
+
+Interpretation:
+Adding GLD is most useful when it improves downside outcomes during stress conditions.
+If GLD increases volatility or reduces returns in normal and strong regimes, its role should be treated as conditional rather than universally beneficial.

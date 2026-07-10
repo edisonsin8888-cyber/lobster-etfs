@@ -1,0 +1,192 @@
+======================================
+Lobster scheduled run started at 2026年 7月 8日 星期三 14时40分49秒 CST
+
+Running: Data Update Agent
+Status: Failed
+Duration: 18.91 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Failed
+Completed Steps: 1 / 6
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Traceback (most recent call last):
+  File "/Users/benson/Documents/lobster-etfs/scripts/lobster_auto_refresh.py", line 170, in <module>
+    main()
+    ~~~~^^
+  File "/Users/benson/Documents/lobster-etfs/scripts/lobster_auto_refresh.py", line 166, in main
+    raise RuntimeError("Auto refresh failed.")
+RuntimeError: Auto refresh failed.
+Lobster scheduled run finished at 2026年 7月 8日 星期三 14时41分08秒 CST
+======================================
+
+======================================
+Lobster scheduled run started at 2026年 7月 8日 星期三 14时45分54秒 CST
+
+Running: Data Update Agent
+Status: Passed
+Duration: 8.79 seconds
+
+Running: Data Quality Check Agent
+Status: Passed
+Duration: 0.18 seconds
+
+Running: Pipeline Run Logger
+Status: Passed
+Duration: 3.11 seconds
+
+Running: System Status Agent
+Status: Passed
+Duration: 0.02 seconds
+
+Running: Research Task Generator
+Status: Passed
+Duration: 0.19 seconds
+
+Running: Notification Agent
+Status: Passed
+Duration: 0.10 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Passed
+Completed Steps: 6 / 6
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Lobster scheduled run finished at 2026年 7月 8日 星期三 14时46分06秒 CST
+======================================
+
+======================================
+Lobster scheduled run started at 2026年 7月 9日 星期四 10时35分56秒 CST
+
+Running: Data Update Agent
+Status: Passed
+Duration: 13.61 seconds
+
+Running: Data Quality Check Agent
+Status: Passed
+Duration: 0.27 seconds
+
+Running: Pipeline Run Logger
+Status: Passed
+Duration: 3.26 seconds
+
+Running: System Status Agent
+Status: Passed
+Duration: 0.02 seconds
+
+Running: Research Task Generator
+Status: Passed
+Duration: 0.16 seconds
+
+Running: Notification Agent
+Status: Passed
+Duration: 0.11 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Passed
+Completed Steps: 6 / 6
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Lobster scheduled run finished at 2026年 7月 9日 星期四 10时36分13秒 CST
+======================================
+
+======================================
+Lobster scheduled run started at 2026年 7月 9日 星期四 10时50分45秒 CST
+
+Running: Data Update Agent
+Traceback (most recent call last):
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 170, in <module>
+    main()
+    ~~~~^^
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 66, in main
+    result = run_step(name, script)
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 24, in run_step
+    result = subprocess.run(
+        ["python", script],
+        capture_output=True,
+        text=True,
+    )
+  File "/opt/homebrew/Cellar/python@3.13/3.13.14/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.14/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.14/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py", line 1991, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python'
+Lobster scheduled run finished at 2026年 7月 9日 星期四 10时50分45秒 CST
+======================================
+
+======================================
+Lobster scheduled run started at 2026年 7月 9日 星期四 10时56分35秒 CST
+
+Running: Data Update Agent
+Status: Passed
+Duration: 18.95 seconds
+
+Running: Data Quality Check Agent
+Status: Passed
+Duration: 0.17 seconds
+
+Running: Pipeline Run Logger
+Status: Failed
+Duration: 0.19 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Failed
+Completed Steps: 3 / 6
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Traceback (most recent call last):
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 171, in <module>
+    main()
+    ~~~~^^
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 167, in main
+    raise RuntimeError("Auto refresh failed.")
+RuntimeError: Auto refresh failed.
+Lobster scheduled run finished at 2026年 7月 9日 星期四 10时56分54秒 CST
+======================================
+
+======================================
+Lobster scheduled run started at 2026年 7月 9日 星期四 11时01分42秒 CST
+
+Running: Data Update Agent
+Status: Passed
+Duration: 13.91 seconds
+
+Running: Data Quality Check Agent
+Status: Passed
+Duration: 0.18 seconds
+
+Running: Pipeline Run Logger
+Status: Passed
+Duration: 3.02 seconds
+
+Running: System Status Agent
+Status: Passed
+Duration: 0.02 seconds
+
+Running: Research Task Generator
+Status: Passed
+Duration: 0.16 seconds
+
+Running: Notification Agent
+Status: Passed
+Duration: 0.11 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Passed
+Completed Steps: 6 / 6
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Lobster scheduled run finished at 2026年 7月 9日 星期四 11时01分59秒 CST
+======================================
+

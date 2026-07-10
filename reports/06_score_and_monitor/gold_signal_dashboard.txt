@@ -4,8 +4,8 @@ Gold ETF Research Dashboard v2.2
 GLD retains some diversification value, but allocation conditions are weak. Current supported range: 0%–5%.
 
 2. Current Monitor Snapshot
-- Gold Diversification Score: 53.89/100
-- Score Status: Mixed
+- Gold Diversification Score: 62.07/100
+- Score Status: Moderate
 - Alert Level: Red
 - Diversification Trend: Improving
 

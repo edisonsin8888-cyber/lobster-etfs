@@ -4,8 +4,8 @@
 GLD still offers some diversification value, but current allocation conditions remain weak. The system supports only a limited strategic range of 0%–5%.
 
 ## 2. Current Diversification Condition
-- Gold Diversification Score: 53.89/100
-- Score Status: Mixed
+- Gold Diversification Score: 62.07/100
+- Score Status: Moderate
 - Alert Level: Red
 - Diversification Trend: Improving
 
