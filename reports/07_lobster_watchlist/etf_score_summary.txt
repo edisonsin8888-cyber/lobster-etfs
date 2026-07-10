@@ -1,0 +1,32 @@
+ETF Score Engine v1
+
+1. Top ETF by Final Score
+- ETF: SPY
+- Final ETF Score: 75.39/100
+- ETF Stance: Constructive
+- Role Tag: Core Equity Sleeve
+
+2. Weakest ETF by Final Score
+- ETF: GLD
+- Final ETF Score: 29.83/100
+- ETF Stance: Defensive
+- Role Tag: Defensive Diversification Sleeve
+
+3. GLD Score View
+- Final ETF Score: 29.83/100
+- ETF Stance: Defensive
+- Momentum Score: 2.00
+- Risk Score: 52.29
+- Drawdown Score: 10.29
+- Role Score: 70.00
+
+4. XLK Score View
+- Final ETF Score: 65.94/100
+- ETF Stance: Neutral
+- Momentum Score: 100.00
+- Risk Score: 35.30
+- Drawdown Score: 45.56
+- Role Score: 65.00
+
+5. Interpretation
+The ETF Score Engine converts watchlist signals into a comparable ETF attractiveness score. It combines momentum, risk, drawdown control, and portfolio role. This gives Lobster a unified scoring layer before the router selects deep-dive research priorities.

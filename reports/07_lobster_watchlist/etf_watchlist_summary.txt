@@ -1,0 +1,18 @@
+ETF Watchlist Monitor v2
+
+Watchlist:
+SPY, QQQ, GLD, TLT, XLK
+
+Top-Level ETF Signals:
+- Best 3M performer: XLK (30.84%)
+- Weakest 3M performer: GLD (-13.61%)
+- Highest volatility ETF: XLK (32.35%)
+
+GLD Watchlist Role:
+- Role Tag: Defensive Diversification Sleeve
+- Momentum Flag: Weak
+- Risk Flag: High Risk
+- Research Priority: High
+
+Lobster Interpretation:
+This watchlist acts as the top-level ETF scanner. It classifies each ETF into a portfolio sleeve role and assigns research priority. GLD remains linked to the deeper Gold Engine because it is the completed defensive diversification deep-dive module.

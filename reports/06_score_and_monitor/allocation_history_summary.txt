@@ -1,0 +1,41 @@
+Historical Allocation Tracker Summary v3
+
+Latest Date: 2026-07-31
+Latest Gold Diversification Score: 40.31/100
+Latest Status: Mixed
+Latest Alert Level: Red
+Latest Allocation Guidance Score: 40.00/100
+Latest Recommendation Confidence: Low
+Latest Best Marginal Step: 0% to 5%
+Latest Recommended Strategic Range: 0%–5%
+
+Latest Month Change:
+- Score change: 1.27
+- Allocation guidance score change: 0.00
+- Average GLD-equity correlation change: -0.01
+- GLD/SPY volatility ratio change: -0.04
+
+Transition Diagnostics:
+- Strategic range transition: 0%–5% → 0%–5% (Unchanged)
+- Alert transition: Red → Red (Unchanged)
+
+Three-Month Trend:
+- Score trend: Deteriorating
+- Allocation stance trend: Deteriorating
+- Three-month score change: -7.45
+- Three-month allocation score change: -25.00
+
+Strategic Range Frequency:
+Recommended Strategic Range
+5%–15%    44
+5%–10%     7
+0%–5%      2
+
+Alert Level Frequency:
+Alert Level
+Green     42
+Yellow     9
+Red        2
+
+Research Takeaway:
+GLD's allocation role remains regime-dependent. The latest reading should be interpreted together with the recent score trend, alert transition, and whether the recommended allocation range is tightening or loosening over time.
