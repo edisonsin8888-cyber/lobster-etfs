@@ -2,7 +2,7 @@
 AI Portfolio Commentary
 
 Generated Time:
-2026-07-10 17:37:59
+2026-07-10 20:00:23
 
 
 Portfolio Overview:
@@ -36,7 +36,7 @@ The defensive allocation view is mainly driven by elevated alert level, low allo
 
 5. Latest Historical Allocation Snapshot
 - Historical Date: 2026-07-31
-- Historical Gold Diversification Score: 40.31/100
+- Historical Gold Diversification Score: 40.33/100
 - Historical Status: Mixed
 - Historical Alert Level: Red
 - Historical Average GLD-equity Correlation: 0.38
@@ -44,7 +44,7 @@ The defensive allocation view is mainly driven by elevated alert level, low allo
 - Historical Stress Return Gap: -0.00%
 
 6. Historical Trend Diagnostics
-- One-month historical score change: 1.27
+- One-month historical score change: 1.29
 - One-month allocation guidance score change: 0.00
 - Previous strategic range: 0%–5%
 - Current strategic range: 0%–5%
@@ -113,9 +113,9 @@ Lobster Research Router v2
 - Role Tag: Defensive Diversification Sleeve
 - Research Priority: High
 - ETF Stance: Defensive
-- Final ETF Score: 29.83/100
+- Final ETF Score: 29.79/100
 - Deep-Dive Status: Completed Deep-Dive Module
-- Router v2 Score: 101.44
+- Router v2 Score: 101.43
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. Ranked Research Queue
@@ -123,26 +123,26 @@ Lobster Research Router v2
 - Role Tag: Defensive Diversification Sleeve
 - Research Priority: High
 - ETF Stance: Defensive
-- Final ETF Score: 29.83/100
+- Final ETF Score: 29.79/100
 - Momentum Flag: Weak
 - Risk Flag: High Risk
-- 3M Return: -13.61%
+- 3M Return: -13.64%
 - 3M Max Drawdown: -17.94%
 - Deep-Dive Status: Completed Deep-Dive Module
-- Router v2 Score: 101.44
+- Router v2 Score: 101.43
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. XLK
 - Role Tag: Growth / Sector Sleeve
 - Research Priority: Medium
 - ETF Stance: Neutral
-- Final ETF Score: 65.94/100
+- Final ETF Score: 65.97/100
 - Momentum Flag: Strong
 - Risk Flag: High Risk
-- 3M Return: 30.84%
+- 3M Return: 30.46%
 - 3M Max Drawdown: -10.89%
 - Deep-Dive Status: Light Deep-Dive Candidate
-- Router v2 Score: 85.08
+- Router v2 Score: 85.09
 - Router Reason: strong momentum, elevated risk, growth-sleeve monitor candidate
 
 3. QQQ
@@ -152,7 +152,7 @@ Lobster Research Router v2
 - Final ETF Score: 74.13/100
 - Momentum Flag: Strong
 - Risk Flag: Normal
-- 3M Return: 18.54%
+- 3M Return: 18.53%
 - 3M Max Drawdown: -7.03%
 - Deep-Dive Status: Future Growth Module Candidate
 - Router v2 Score: 80.94
@@ -162,26 +162,26 @@ Lobster Research Router v2
 - Role Tag: Rate-Sensitive Defensive Sleeve
 - Research Priority: Medium
 - ETF Stance: Neutral
-- Final ETF Score: 61.53/100
+- Final ETF Score: 61.37/100
 - Momentum Flag: Weak
 - Risk Flag: Defensive
-- 3M Return: -2.44%
+- 3M Return: -2.55%
 - 3M Max Drawdown: -4.80%
 - Deep-Dive Status: Future Defensive Module Candidate
-- Router v2 Score: 77.54
+- Router v2 Score: 77.48
 - Router Reason: weak momentum, negative 3M return
 
 5. SPY
 - Role Tag: Core Equity Sleeve
 - Research Priority: Low
 - ETF Stance: Constructive
-- Final ETF Score: 75.39/100
+- Final ETF Score: 75.46/100
 - Momentum Flag: Strong
 - Risk Flag: Defensive
-- 3M Return: 10.51%
+- 3M Return: 10.56%
 - 3M Max Drawdown: -4.49%
 - Deep-Dive Status: Benchmark / Core Reference
-- Router v2 Score: 52.39
+- Router v2 Score: 52.41
 - Router Reason: strong ETF score, strong momentum
 
 3. Router v2 Interpretation

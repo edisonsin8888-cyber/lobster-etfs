@@ -190,3 +190,49 @@ Saved to reports/08_agent_ops/final_agent_summary.txt
 Lobster scheduled run finished at 2026年 7月 9日 星期四 11时01分59秒 CST
 ======================================
 
+======================================
+Lobster scheduled run started at Fri Jul 10 20:00:04 CST 2026
+
+Running: Data Update Agent
+Status: Passed
+Duration: 15.01 seconds
+
+Running: Data Quality Check Agent
+Status: Passed
+Duration: 0.18 seconds
+
+Running: Pipeline Run Logger
+Status: Passed
+Duration: 3.31 seconds
+
+Running: System Status Agent
+Status: Passed
+Duration: 0.02 seconds
+
+Running: Research Task Generator
+Status: Passed
+Duration: 0.16 seconds
+
+Running: Notification Agent
+Status: Passed
+Duration: 0.10 seconds
+
+Running: Email Notification Agent
+Status: Failed
+Duration: 0.04 seconds
+
+=== Final Auto Refresh Status ===
+Overall Status: Failed
+Completed Steps: 7 / 7
+Saved to reports/08_agent_ops/auto_refresh_log.txt
+Saved to reports/08_agent_ops/final_agent_summary.txt
+Traceback (most recent call last):
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 172, in <module>
+    main()
+    ~~~~^^
+  File "/Users/benson/Projects/lobster-etfs/scripts/lobster_auto_refresh.py", line 168, in main
+    raise RuntimeError("Auto refresh failed.")
+RuntimeError: Auto refresh failed.
+Lobster scheduled run finished at Fri Jul 10 20:00:23 CST 2026
+======================================
+
