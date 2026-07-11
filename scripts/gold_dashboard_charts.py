@@ -1,6 +1,16 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import os
 from pathlib import Path
+import tempfile
+
+import pandas as pd
+
+MPL_CONFIG_DIR = Path(tempfile.gettempdir()) / "lobster-etfs-matplotlib"
+MPL_CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+os.environ["MPLCONFIGDIR"] = str(MPL_CONFIG_DIR)
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 
 BASE = Path("reports/06_score_and_monitor")
 WEIGHT_DIR = Path("reports/05_weight_sensitivity")

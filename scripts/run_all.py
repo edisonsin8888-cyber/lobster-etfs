@@ -7,6 +7,10 @@ from gold_utils import score_status, allocation_stance
 
 PIPELINE = [
 
+    ("Data Quality Check", "scripts/data_quality_check.py"),
+
+    ("Market Regime Analysis", "scripts/regime_analysis.py"),
+
     ("Gold Diversification Score", "scripts/gold_diversification_score.py"),
 
     ("Diversification Alert", "scripts/diversification_alert.py"),
@@ -14,6 +18,8 @@ PIPELINE = [
     ("AI Risk Monitor", "scripts/ai_risk_monitor.py"),
 
     ("Allocation History Tracker", "scripts/allocation_history_tracker.py"),
+
+    ("AI-Readable Research Packet", "scripts/generate_research_packet.py"),
 
 
     # Gold Research Layer
@@ -74,6 +80,7 @@ EXPECTED_OUTPUTS = [
     "reports/weekly_reports/gold_weekly_memo.txt",
     "reports/06_score_and_monitor/allocation_history.csv",
     "reports/06_score_and_monitor/allocation_history_summary.txt",
+    "reports/07_ai_research/research_packet.json",
     "reports/06_score_and_monitor/gold_signal_dashboard.txt",
     "reports/06_score_and_monitor/gold_div_score_history.png",
     "reports/06_score_and_monitor/allocation_guidance_history.png",
@@ -106,7 +113,7 @@ def run_task(name, script):
     if result.returncode != 0:
         print(result.stdout)
         print(result.stderr)
-        raise RuntimeError(f"{name} failed.")
+        raise RuntimeError(f"{name} failed with return code {result.returncode}.")
 
     print(f"Completed: {name}")
 

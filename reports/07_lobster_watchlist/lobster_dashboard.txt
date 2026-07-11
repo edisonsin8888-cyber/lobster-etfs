@@ -24,17 +24,17 @@ Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD d
 5. Growth Sleeve Update: XLK
 - ETF Score: 65.97/100
 - ETF Stance: Neutral
-- XLK 3M Return: 30.84%
-- SPY 3M Return: 10.51%
-- XLK 3M Excess Return: 20.33%
-- XLK Volatility Premium: 19.32%
-- Growth Sleeve Score: 72.18/100
+- XLK 3M Return: 30.46%
+- SPY 3M Return: 10.56%
+- XLK 3M Excess Return: 19.90%
+- XLK Volatility Premium: 19.25%
+- Growth Sleeve Score: 71.48/100
 - Growth Sleeve Risk Flag: High Growth Risk
 - Tactical Growth Stance: Constructive Growth Sleeve
 
 6. Router v2 Decision
 - Next Deep-Dive Candidate: GLD
-- Router v2 Score: 101.44
+- Router v2 Score: 101.43
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 7. Portfolio Research Stance
