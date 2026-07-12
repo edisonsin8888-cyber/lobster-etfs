@@ -1,42 +1,18 @@
 import pandas as pd
 
+from gold_decision_rules import (
+    calculate_final_score,
+    score_correlation,
+    score_risk_contribution,
+    score_stress,
+    score_volatility,
+)
+
 REGIME_FILE = "reports/02_regime_analysis/regime_analysis.csv"
 ROLLING_CORR_FILE = "reports/03_rolling_analysis/rolling_correlation.csv"
 ROLLING_VOL_FILE = "reports/03_rolling_analysis/rolling_volatility.csv"
 RISK_CONTRIBUTION_FILE = "reports/04_risk_contribution/risk_contribution_summary.csv"
 OUTPUT_FILE = "reports/06_score_and_monitor/gold_diversification_score.csv"
-
-
-def clamp(x, low=0, high=100):
-    return max(low, min(high, x))
-
-
-def score_correlation(avg_corr):
-    return clamp(100 * (1 - avg_corr))
-
-
-def score_volatility(gld_vol, spy_vol):
-    ratio = gld_vol / spy_vol
-    if ratio <= 1:
-        return 100
-    if ratio >= 2:
-        return 30
-    return clamp(100 - (ratio - 1) * 70)
-
-
-def score_stress(gld_stress, spy_stress):
-    return clamp(50 + (gld_stress - spy_stress) * 2000)
-
-
-def score_risk_contribution(gld_rc):
-    if gld_rc <= 0.25:
-        return 90
-    if gld_rc <= 0.35:
-        return 70
-    if gld_rc <= 0.45:
-        return 50
-    return 30
-
 
 regime = pd.read_csv(REGIME_FILE, index_col=0)
 rolling_corr = pd.read_csv(ROLLING_CORR_FILE, index_col=0).dropna()
@@ -65,12 +41,7 @@ scores = {
     "Risk Contribution Score": score_risk_contribution(gld_rc),
 }
 
-final_score = (
-    scores["Correlation Score"] * 0.30
-    + scores["Volatility Score"] * 0.25
-    + scores["Stress Performance Score"] * 0.25
-    + scores["Risk Contribution Score"] * 0.20
-)
+final_score = calculate_final_score(scores)
 
 result = pd.DataFrame([
     {"Metric": "Average GLD-Equity Rolling Correlation", "Value": avg_equity_corr, "Score": scores["Correlation Score"]},

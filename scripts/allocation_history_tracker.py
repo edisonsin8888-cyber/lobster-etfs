@@ -1,6 +1,10 @@
 import pandas as pd
 import numpy as np
 
+from gold_decision_rules import (
+    calculate_history_component_scores,
+    calculate_history_gold_score,
+)
 from gold_utils import (
     score_status,
     alert_level,
@@ -46,11 +50,12 @@ for date in returns.resample("ME").last().index:
     stress = sample[sample["SPY"] <= stress_cut]
     stress_gap = stress["GLD"].mean() - stress["SPY"].mean()
 
-    corr_score = max(0, 100 * (1 - avg_corr))
-    vol_score = max(0, min(100, 100 - max(vol_ratio - 1, 0) * 70))
-    stress_score = max(0, min(100, 50 + stress_gap * 2000))
-
-    gold_score = corr_score * 0.35 + vol_score * 0.30 + stress_score * 0.35
+    corr_score, vol_score, stress_score = calculate_history_component_scores(
+        avg_corr,
+        vol_ratio,
+        stress_gap,
+    )
+    gold_score = calculate_history_gold_score(corr_score, vol_score, stress_score)
     alloc_score = allocation_score(gold_score, stress_gap, avg_corr, vol_ratio)
 
     rows.append({

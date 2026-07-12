@@ -87,3 +87,54 @@ def allocation_stance(allocation_score):
     if allocation_score >= 55:
         return "Cautious"
     return "Defensive"
+
+
+def allocation_rule_trace(score, stress_gap, avg_corr, vol_ratio):
+    """Return the existing allocation-rule decisions and their evaluated predicates."""
+    red_conditions = {
+        "average_correlation_at_least_0_60": avg_corr >= 0.60,
+        "volatility_ratio_at_least_1_70": vol_ratio >= 1.70,
+        "score_below_45": score < 45,
+    }
+    yellow_conditions = {
+        "average_correlation_at_least_0_30": avg_corr >= 0.30,
+        "volatility_ratio_at_least_1_20": vol_ratio >= 1.20,
+        "score_below_70": score < 70,
+    }
+    allocation_adjustments = {
+        "stress_gap_positive": 15 if stress_gap > 0 else 0,
+        "average_correlation_below_0_45": 10 if avg_corr < 0.45 else 0,
+        "average_correlation_above_0_65": -10 if avg_corr > 0.65 else 0,
+        "volatility_ratio_below_1_50": 10 if vol_ratio < 1.50 else 0,
+        "volatility_ratio_above_1_80": -10 if vol_ratio > 1.80 else 0,
+        "score_at_least_60": 10 if score >= 60 else 0,
+        "score_below_45": -10 if score < 45 else 0,
+    }
+    range_conditions = {
+        "supports_5_to_15": {
+            "stress_gap_positive": stress_gap > 0,
+            "score_at_least_55": score >= 55,
+            "average_correlation_below_0_60": avg_corr < 0.60,
+            "volatility_ratio_below_1_80": vol_ratio < 1.80,
+        },
+        "supports_5_to_10": {
+            "stress_gap_positive": stress_gap > 0,
+            "score_at_least_45": score >= 45,
+            "average_correlation_below_0_70": avg_corr < 0.70,
+        },
+    }
+
+    return {
+        "alert_level": alert_level(avg_corr, vol_ratio, score),
+        "alert_conditions": {
+            "red": red_conditions,
+            "yellow": yellow_conditions,
+        },
+        "allocation_guidance_score": allocation_score(score, stress_gap, avg_corr, vol_ratio),
+        "allocation_adjustments": allocation_adjustments,
+        "recommended_strategic_range": strategic_range(score, avg_corr, vol_ratio, stress_gap),
+        "range_conditions": range_conditions,
+        "best_marginal_step": best_step(score, stress_gap, vol_ratio),
+        "recommendation_confidence": confidence(allocation_score(score, stress_gap, avg_corr, vol_ratio)),
+        "allocation_stance": allocation_stance(allocation_score(score, stress_gap, avg_corr, vol_ratio)),
+    }
