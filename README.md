@@ -26,6 +26,30 @@ The system can be refreshed through one command:
 python scripts/run_all.py
 ```
 
+### Research Copilot
+
+The terminal Research Copilot answers questions only from the generated AI research packet. Set `OPENAI_API_KEY` in your environment; never place the key in Git, source files, reports, or `.env` files that may be committed.
+
+Validate the request setup without an API call:
+
+```bash
+.venv/bin/python scripts/research_copilot.py --dry-run "当前 GLD 分散化状态是什么？"
+```
+
+Run a research query:
+
+```bash
+OPENAI_API_KEY="your-key" .venv/bin/python scripts/research_copilot.py "当前 GLD 分散化状态是什么？"
+```
+
+Export a no-cost, copy-ready prompt for ChatGPT or VS Code Codex (no API key or API call is required):
+
+```bash
+.venv/bin/python scripts/research_copilot.py --export-prompt "为什么当前黄金配置建议维持在这个区间？"
+```
+
+Copy the exported prompt from the terminal, or from `reports/07_ai_research/latest_copilot_prompt.md`, into ChatGPT or VS Code Codex. The generated prompt can contain market-research data, so review it before sharing it with any external service.
+
 ---
 
 ## 2. ETF Universe
