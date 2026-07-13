@@ -19,6 +19,8 @@ PIPELINE = [
 
     ("Allocation History Tracker", "scripts/allocation_history_tracker.py"),
 
+    ("Decision Boundary Explorer", "scripts/decision_boundary_explorer.py"),
+
     ("AI-Readable Research Packet", "scripts/generate_research_packet.py"),
 
 
@@ -80,6 +82,7 @@ EXPECTED_OUTPUTS = [
     "reports/weekly_reports/gold_weekly_memo.txt",
     "reports/06_score_and_monitor/allocation_history.csv",
     "reports/06_score_and_monitor/allocation_history_summary.txt",
+    "reports/07_ai_research/decision_boundary_explorer.json",
     "reports/07_ai_research/research_packet.json",
     "reports/06_score_and_monitor/gold_signal_dashboard.txt",
     "reports/06_score_and_monitor/gold_div_score_history.png",

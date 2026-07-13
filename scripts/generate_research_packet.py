@@ -16,12 +16,14 @@ from regime_analysis import calculate_regime_thresholds, classify_regime
 
 
 SCHEMA_VERSION = "1.1.0"
+SUPPORTED_DECISION_BOUNDARY_SCHEMA_VERSION = "1.0.0"
 CORE_TICKERS = {"SPY", "QQQ", "GLD", "TLT"}
 
 DATA_QUALITY_FILE = Path("reports/08_agent_ops/data_quality_report.csv")
 SCORE_FILE = Path("reports/06_score_and_monitor/gold_diversification_score.csv")
 HISTORY_FILE = Path("reports/06_score_and_monitor/allocation_history.csv")
 ALERT_FILE = Path("reports/06_score_and_monitor/diversification_alert.txt")
+DECISION_BOUNDARY_FILE = Path("reports/07_ai_research/decision_boundary_explorer.json")
 REGIME_SUMMARY_FILE = Path("reports/02_regime_analysis/regime_analysis.csv")
 SPY_DATA_FILE = Path("data/spy.csv")
 REGIME_METHOD_FILE = Path("scripts/regime_analysis.py")
@@ -33,6 +35,7 @@ SOURCE_REPORT_PATHS = {
     "gold_diversification_score": str(SCORE_FILE),
     "allocation_history": str(HISTORY_FILE),
     "diversification_alert": str(ALERT_FILE),
+    "decision_boundary_explorer": str(DECISION_BOUNDARY_FILE),
     "regime_summary": str(REGIME_SUMMARY_FILE),
     "market_data": str(SPY_DATA_FILE),
     "regime_methodology": str(REGIME_METHOD_FILE),
@@ -73,6 +76,16 @@ REGIME_SUMMARY_COLUMNS = ["Regime", "SPY", "QQQ", "GLD", "TLT", "Number of Days"
 
 class RequiredSourceError(RuntimeError):
     """A required source cannot safely populate the packet."""
+
+    def __init__(
+        self,
+        message: str,
+        blocking_issues: list[str] | None = None,
+        ticker_latest_dates: dict[str, str | None] | None = None,
+    ):
+        super().__init__(message)
+        self.blocking_issues = blocking_issues or [message]
+        self.ticker_latest_dates = ticker_latest_dates
 
 
 def utc_timestamp() -> str:
@@ -175,6 +188,7 @@ def empty_packet() -> dict[str, Any]:
                 "explanation": None,
             },
         },
+        "decision_boundary_explorer": None,
         "methodology_limitations": [],
         "source_report_paths": SOURCE_REPORT_PATHS,
     }
@@ -266,6 +280,11 @@ def read_data_quality(
                 latest_date = pd.Timestamp(parsed).normalize()
 
         ticker_dates[ticker] = date_string(latest_date)
+        if status == "Passed" and latest_date is None:
+            raise RequiredSourceError(
+                f"Passed ticker has invalid or missing Latest Date: {ticker}",
+                ticker_latest_dates=dict(ticker_dates),
+            )
         if status != "Failed" and latest_date is not None:
             valid_dates.append(latest_date)
 
@@ -293,12 +312,23 @@ def read_data_quality(
         row = core_rows[ticker]
         status = str(row["Status"]).strip() if not pd.isna(row["Status"]) else None
         if status == "Failed":
-            raise RequiredSourceError(f"Core ticker failed data quality: {ticker}")
+            raise RequiredSourceError(
+                f"Core ticker failed data quality: {ticker}",
+                ticker_latest_dates=dict(ticker_dates),
+            )
         if status != "Passed":
             warnings.append(f"Core ticker data quality is {status}: {ticker}")
-        core_valid_dates.append(
-            parse_date(row["Latest Date"], f"{DATA_QUALITY_FILE} Latest Date for {ticker}")
-        )
+        try:
+            core_valid_dates.append(
+                parse_date(
+                    row["Latest Date"],
+                    f"{DATA_QUALITY_FILE} Latest Date for {ticker}",
+                )
+            )
+        except RequiredSourceError as error:
+            raise RequiredSourceError(
+                str(error), ticker_latest_dates=dict(ticker_dates)
+            ) from error
 
     for row in rows:
         if row["ticker"] not in CORE_TICKERS and row["status"] != "Passed":
@@ -582,8 +612,71 @@ def read_methodology_limitations() -> list[dict[str, str]]:
     return limitations
 
 
+def read_decision_boundary_explorer() -> dict[str, Any]:
+    if not DECISION_BOUNDARY_FILE.exists():
+        raise RequiredSourceError(f"Required source is missing: {DECISION_BOUNDARY_FILE}")
+    try:
+        explorer = json.loads(DECISION_BOUNDARY_FILE.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        raise RequiredSourceError(f"Required source is unreadable: {DECISION_BOUNDARY_FILE} ({error})") from error
+    if not isinstance(explorer, dict):
+        raise RequiredSourceError(f"Required source is incompatible: {DECISION_BOUNDARY_FILE}")
+    schema_version = explorer.get("schema_version")
+    if schema_version != SUPPORTED_DECISION_BOUNDARY_SCHEMA_VERSION:
+        raise RequiredSourceError(
+            f"Required source has unsupported schema_version: {DECISION_BOUNDARY_FILE} "
+            f"expected {SUPPORTED_DECISION_BOUNDARY_SCHEMA_VERSION}, found {schema_version!r}"
+        )
+    required_sections = {
+        "analysis_readiness": dict,
+        "dates": dict,
+        "observed_score_engine": dict,
+        "observed_allocation_history": dict,
+        "decision_limits": dict,
+        "score_engine_scenarios": list,
+        "allocation_history_style_scenarios": list,
+        "source_report_paths": dict,
+    }
+    for section, expected_type in required_sections.items():
+        if section not in explorer:
+            raise RequiredSourceError(
+                f"Required explorer section is missing: {section} in {DECISION_BOUNDARY_FILE}"
+            )
+        if not isinstance(explorer[section], expected_type):
+            raise RequiredSourceError(
+                f"Required explorer section has wrong type: {section} in "
+                f"{DECISION_BOUNDARY_FILE}; expected {expected_type.__name__}"
+            )
+    readiness = explorer["analysis_readiness"]
+    status = readiness.get("status")
+    blocking_issues = readiness.get("blocking_issues")
+    review_warnings = readiness.get("review_warnings")
+    if (
+        status not in {"ready", "needs_review", "blocked"}
+        or not isinstance(blocking_issues, list)
+        or not isinstance(review_warnings, list)
+    ):
+        raise RequiredSourceError(f"Required source is incompatible: {DECISION_BOUNDARY_FILE}")
+    return explorer
+
+
 def build_packet() -> dict[str, Any]:
     warnings: list[str] = []
+    explorer = read_decision_boundary_explorer()
+    explorer_readiness = explorer["analysis_readiness"]
+    if explorer_readiness["status"] == "blocked":
+        issues = [str(issue) for issue in explorer_readiness["blocking_issues"]]
+        if not issues:
+            issues = ["Explorer reported blocked readiness without a blocking issue"]
+        raise RequiredSourceError(
+            "Decision boundary explorer is blocked: " + " | ".join(issues),
+            blocking_issues=[
+                f"Decision boundary explorer is blocked: {issue}" for issue in issues
+            ],
+        )
+    if explorer_readiness["status"] == "needs_review":
+        warnings.extend(str(item) for item in explorer_readiness["review_warnings"])
+
     data_quality, ticker_dates, core_market_data_date, all_tracked_market_data_date = read_data_quality(warnings)
     score = read_score(warnings)
     allocation, changes, allocation_history_period_label = read_history()
@@ -602,6 +695,7 @@ def build_packet() -> dict[str, Any]:
         "regime_summary": read_regime_summary(),
     }
 
+    warnings = list(dict.fromkeys(warnings))
     packet = empty_packet()
     packet["analysis_readiness"] = {
         "status": "needs_review" if warnings else "ready",
@@ -625,6 +719,7 @@ def build_packet() -> dict[str, Any]:
     packet["allocation_guidance"] = allocation
     packet["alert"] = alert
     packet["recent_score_changes"] = changes
+    packet["decision_boundary_explorer"] = explorer
     packet["methodology_limitations"] = read_methodology_limitations()
     return packet
 
@@ -634,7 +729,9 @@ def main() -> None:
         packet = build_packet()
     except RequiredSourceError as error:
         packet = empty_packet()
-        packet["analysis_readiness"]["blocking_issues"] = [str(error)]
+        packet["analysis_readiness"]["blocking_issues"] = error.blocking_issues
+        if error.ticker_latest_dates is not None:
+            packet["dates"]["ticker_latest_dates"] = error.ticker_latest_dates
         write_packet(packet)
         print(f"Blocked research packet written to {OUTPUT_FILE}: {error}", file=sys.stderr)
         raise SystemExit(1)
