@@ -164,6 +164,134 @@ border-bottom:1px solid #ddd;
 
 }
 
+
+.decision-boundary-card {
+
+border-top:4px solid #1f4e79;
+
+}
+
+
+.decision-boundary-observed,
+.decision-boundary-hypothetical,
+.decision-boundary-safety {
+
+padding:20px;
+
+margin-top:18px;
+
+border-radius:12px;
+
+}
+
+
+.decision-boundary-observed {
+
+background:#f1f7fd;
+
+border-left:5px solid #1f4e79;
+
+}
+
+
+.decision-boundary-hypothetical {
+
+background:#fff8e7;
+
+border-left:5px solid #b7791f;
+
+}
+
+
+.decision-boundary-safety {
+
+background:#fff3f3;
+
+border-left:5px solid #b83232;
+
+}
+
+
+.decision-boundary-grid {
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+
+.decision-boundary-metric {
+
+background:white;
+
+padding:15px;
+
+border-radius:10px;
+
+}
+
+
+.decision-boundary-value {
+
+font-size:24px;
+
+font-weight:bold;
+
+color:#1f4e79;
+
+margin-top:8px;
+
+}
+
+
+.decision-boundary-details {
+
+margin-top:15px;
+
+}
+
+
+.decision-boundary-source {
+
+color:#555;
+
+}
+
+
+.decision-boundary-badge {
+
+display:inline-block;
+
+background:#8a5a00;
+
+color:white;
+
+padding:6px 9px;
+
+margin:0 6px 6px 0;
+
+border-radius:999px;
+
+font-size:13px;
+
+font-weight:bold;
+
+}
+
+
+@media (max-width:800px) {
+
+.decision-boundary-grid {
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 </style>
 
 
@@ -180,7 +308,7 @@ AI-Powered ETF Research and Portfolio Intelligence Platform
 
 <p>
 Last Updated:
-2026-07-13 11:48:41
+2026-07-14 13:45:57
 </p>
 
 <p>
@@ -298,6 +426,73 @@ RED
 
 </div>
 
+
+<div class="card decision-boundary-card">
+<h2>Gold Decision Boundary</h2>
+
+<section class="decision-boundary-observed">
+<h3>Observed evidence / 已观察事实</h3>
+<p class="decision-boundary-source">Source type: observed_period_labelled (observed / observed_period_labelled)</p>
+<div class="decision-boundary-grid">
+<div class="decision-boundary-metric"><div class="title">Current allocation-history range</div><div class="decision-boundary-value">0%–5%</div></div>
+<div class="decision-boundary-metric"><div class="title">Current historical score</div><div class="decision-boundary-value">40.33</div></div>
+<div class="decision-boundary-metric"><div class="title">Lowest component score</div><div class="decision-boundary-value">38.11</div></div>
+<div class="decision-boundary-metric"><div class="title">Largest weighted drag</div><div class="decision-boundary-value">18.57</div></div>
+</div>
+<div class="decision-boundary-details">
+<p><strong>Lowest component(s), including ties</strong></p><ul><li><strong>Average GLD-Equity Rolling Correlation</strong>: 38.11</li></ul>
+<p><strong>Largest-drag component(s), including ties</strong></p><ul><li><strong>Average GLD-Equity Rolling Correlation</strong>: 18.57</li></ul>
+<p>Allocation source period label: 2026-07-31</p>
+<p>Core market data as-of date: 2026-07-09</p>
+<p>Analysis readiness: needs_review</p>
+<p><strong>Review warnings</strong></p><ul><li>gold_diversification_score.csv lacks intrinsic date metadata; gold_diversification_score.source_as_of_date is null.</li><li>allocation_history_period_label is later than core_market_data_as_of_date; it is a period-end label, not observed data coverage.</li></ul>
+</div>
+</section>
+
+
+<section class="decision-boundary-hypothetical" data-scenario-category="minimal_next_range_transition">
+<h3>Hypothetical rule mechanics / 假设规则演示</h3>
+<p><span class="decision-boundary-badge">hypothetical_not_observed</span><span class="decision-boundary-badge">conditional_non_predictive</span><span class="decision-boundary-badge">技术规则边界演示</span></p>
+<div class="decision-boundary-grid">
+<div class="decision-boundary-metric"><div class="title">Baseline range</div><div class="decision-boundary-value">0%–5%</div></div>
+<div class="decision-boundary-metric"><div class="title">Target range</div><div class="decision-boundary-value">5%–10%</div></div>
+<div class="decision-boundary-metric"><div class="title">Resulting range</div><div class="decision-boundary-value">5%–10%</div></div>
+<div class="decision-boundary-metric"><div class="title">Outcome status</div><div class="decision-boundary-value">reaches_next_higher_range</div></div>
+</div>
+<div class="decision-boundary-details">
+<p><strong>Changed inputs</strong></p><ul>
+<li><strong>gld_spy_volatility_ratio</strong>: decrease; 略低于 1.80
+<details><summary>Machine boundary values (technical detail only)</summary>
+Observed value: 2.380889589103316<br>
+Hypothetical value: 1.7999999999999998
+</details></li>
+
+<li><strong>stress_return_gap</strong>: increase; 略高于 0.00
+<details><summary>Machine boundary values (technical detail only)</summary>
+Observed value: -4.595653904251526e-05<br>
+Hypothetical value: 5e-324
+</details></li>
+</ul>
+<p><strong>Preserved satisfied inputs</strong></p><ul><li>average_gld_equity_correlation</li></ul>
+<p><strong>Failing predicates</strong></p><ul><li>None reported by the scenario.</li></ul>
+<p>Construction method: authoritative_candidate_search</p>
+<p>Minimal definition: fewest changed observed input fields</p>
+<p>Selection method: minimum_changed_fields_reaching_next_range</p>
+<p>Tie breaker: lexicographic by input field, predicate ID, operator, and machine target</p>
+</div>
+</section>
+
+<section class="decision-boundary-safety">
+<h3>Reader-safety warning / 阅读安全提示</h3>
+<ul><li>Nextafter values are technical rule-boundary values.</li><li>A stress gap just above zero may be economically indistinguishable from zero.</li><li>Reaching a higher allocation range demonstrates existing rule mechanics, not a robust allocation recommendation.</li><li>Economic materiality and buffer robustness have not been established.</li></ul>
+<p>technical_rule_boundary_test: True</p>
+<p>economic_materiality_assessed: False</p>
+<p>robustness_buffer_tested: False</p>
+</section>
+
+</div>
+
+
 <div class="card">
 
 <h2>
@@ -354,7 +549,7 @@ AI Portfolio Commentary
 AI Portfolio Commentary
 
 Generated Time:
-2026-07-13 11:48:41
+2026-07-14 13:45:57
 
 
 Portfolio Overview:
