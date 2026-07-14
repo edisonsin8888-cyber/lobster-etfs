@@ -1,27 +1,27 @@
 Lobster Research Task Generator
-Run Time: 2026-07-10 20:00:23
+Run Time: 2026-07-14 15:44:01
 
 1. Current Router Decision
 - Active Candidate: GLD
-- Router v2 Score: 101.43
+- Router v2 Score: 101.13
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. Generated Research Tasks
 
 Priority 1: Continue monitoring GLD as the active router candidate
-- Reason: Router v2 selected GLD. Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available. Router score: 101.43.
+- Reason: Router v2 selected GLD. Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available. Router score: 101.13.
 
 Priority 2: Maintain GLD defensive sleeve review
 - Reason: Gold Engine status is Moderate, alert level is Red, allocation stance is Defensive, and recommended range is 0%–5%. Gold Diversification Score: 62.07/100.
 
 Priority 3: Track XLK growth sleeve risk
-- Reason: XLK Growth Sleeve Score is 71.48/100. Risk flag: High Growth Risk. Tactical stance: Constructive Growth Sleeve. XLK 3M excess return vs SPY: 19.90%.
+- Reason: XLK Growth Sleeve Score is 62.76/100. Risk flag: High Growth Risk. Tactical stance: Neutral Growth Sleeve. XLK 3M excess return vs SPY: 15.30%.
 
 Priority 4: Review strongest ETF score candidate: SPY
-- Reason: SPY has the highest Final ETF Score at 75.46/100 with stance Constructive.
+- Reason: SPY has the highest Final ETF Score at 74.80/100 with stance Constructive.
 
 Priority 5: Review weakest ETF score candidate: GLD
-- Reason: GLD has the lowest Final ETF Score at 29.79/100 with stance Defensive.
+- Reason: GLD has the lowest Final ETF Score at 28.94/100 with stance Defensive.
 
 3. Suggested System Extension
 If GLD remains the active router candidate, keep the Gold Engine as the completed defensive module and consider building a TLT rate-sensitive defensive module next.

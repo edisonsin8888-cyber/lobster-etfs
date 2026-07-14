@@ -6,24 +6,24 @@ The current Router v2 deep-dive candidate is GLD.
 - Role Tag: Defensive Diversification Sleeve
 - Research Priority: High
 - ETF Stance: Defensive
-- Final ETF Score: 29.79/100
-- Router v2 Score: 101.43
+- Final ETF Score: 28.94/100
+- Router v2 Score: 101.13
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. ETF Market Snapshot
-- Best 3M performer: XLK (30.46%)
-- Weakest 3M performer: GLD (-13.64%)
-- Highest-volatility ETF: XLK (32.28%)
+- Best 3M performer: XLK (24.50%)
+- Weakest 3M performer: GLD (-15.67%)
+- Highest-volatility ETF: XLK (32.79%)
 
 3. ETF Score Ranking
-1. SPY — 75.46/100, Constructive, Core Equity Sleeve
-2. QQQ — 74.13/100, Constructive, Growth / Sector Sleeve
-3. XLK — 65.97/100, Neutral, Growth / Sector Sleeve
-4. TLT — 61.37/100, Neutral, Rate-Sensitive Defensive Sleeve
-5. GLD — 29.79/100, Defensive, Defensive Diversification Sleeve
+1. SPY — 74.80/100, Constructive, Core Equity Sleeve
+2. QQQ — 73.85/100, Constructive, Growth / Sector Sleeve
+3. XLK — 65.72/100, Neutral, Growth / Sector Sleeve
+4. TLT — 60.18/100, Neutral, Rate-Sensitive Defensive Sleeve
+5. GLD — 28.94/100, Defensive, Defensive Diversification Sleeve
 
 4. Defensive Sleeve Update: GLD
-- GLD ETF Score: 29.79/100
+- GLD ETF Score: 28.94/100
 - GLD ETF Stance: Defensive
 - Gold Diversification Score: 62.07/100
 - Score Status: Moderate
@@ -35,15 +35,15 @@ Interpretation:
 GLD remains the completed defensive diversification deep-dive module. However, the Gold Engine remains cautious, so the system does not support aggressive GLD allocation under current conditions.
 
 5. Growth Sleeve Update: XLK
-- XLK ETF Score: 65.97/100
+- XLK ETF Score: 65.72/100
 - XLK ETF Stance: Neutral
-- XLK 3M Return: 30.46%
-- SPY 3M Return: 10.56%
-- XLK 3M Excess Return: 19.90%
-- XLK Volatility Premium: 19.25%
-- Growth Sleeve Score: 71.48/100
+- XLK 3M Return: 24.50%
+- SPY 3M Return: 9.19%
+- XLK 3M Excess Return: 15.30%
+- XLK Volatility Premium: 19.64%
+- Growth Sleeve Score: 62.76/100
 - Growth Sleeve Risk Flag: High Growth Risk
-- Tactical Growth Stance: Constructive Growth Sleeve
+- Tactical Growth Stance: Neutral Growth Sleeve
 
 Interpretation:
 XLK shows strong growth leadership relative to SPY, but the growth signal comes with elevated volatility. It should be monitored as a constructive but high-risk growth / sector sleeve.

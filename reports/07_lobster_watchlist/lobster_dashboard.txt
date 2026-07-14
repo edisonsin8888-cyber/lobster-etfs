@@ -4,16 +4,16 @@ Lobster ETF Research Dashboard v2
 Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD defensive deep-dive analysis, and XLK growth-sleeve monitoring.
 
 2. ETF Watchlist Snapshot
-- Best 3M performer: XLK (30.46%)
-- Weakest 3M performer: GLD (-13.64%)
-- Highest-volatility ETF: XLK (32.28%)
+- Best 3M performer: XLK (24.50%)
+- Weakest 3M performer: GLD (-15.67%)
+- Highest-volatility ETF: XLK (32.79%)
 
 3. ETF Score Ranking
-- Top ETF by Final Score: SPY (75.46/100, Constructive)
-- Weakest ETF by Final Score: GLD (29.79/100, Defensive)
+- Top ETF by Final Score: SPY (74.80/100, Constructive)
+- Weakest ETF by Final Score: GLD (28.94/100, Defensive)
 
 4. Defensive Sleeve Update: GLD
-- ETF Score: 29.79/100
+- ETF Score: 28.94/100
 - ETF Stance: Defensive
 - Gold Diversification Score: 62.07/100
 - Score Status: Moderate
@@ -22,19 +22,19 @@ Lobster v2 combines ETF watchlist scanning, ETF scoring, research routing, GLD d
 - Recommended Strategic Range: 0%–5%
 
 5. Growth Sleeve Update: XLK
-- ETF Score: 65.97/100
+- ETF Score: 65.72/100
 - ETF Stance: Neutral
-- XLK 3M Return: 30.46%
-- SPY 3M Return: 10.56%
-- XLK 3M Excess Return: 19.90%
-- XLK Volatility Premium: 19.25%
-- Growth Sleeve Score: 71.48/100
+- XLK 3M Return: 24.50%
+- SPY 3M Return: 9.19%
+- XLK 3M Excess Return: 15.30%
+- XLK Volatility Premium: 19.64%
+- Growth Sleeve Score: 62.76/100
 - Growth Sleeve Risk Flag: High Growth Risk
-- Tactical Growth Stance: Constructive Growth Sleeve
+- Tactical Growth Stance: Neutral Growth Sleeve
 
 6. Router v2 Decision
 - Next Deep-Dive Candidate: GLD
-- Router v2 Score: 101.43
+- Router v2 Score: 101.13
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 7. Portfolio Research Stance

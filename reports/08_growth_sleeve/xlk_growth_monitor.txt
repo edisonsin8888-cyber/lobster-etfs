@@ -4,25 +4,25 @@ XLK Growth Sleeve Monitor v1
 This module evaluates whether XLK currently deserves attention as a growth / technology sector sleeve relative to SPY.
 
 2. XLK vs SPY Performance
-- Latest Date: 2026-07-09
-- XLK 1M Return: 2.53%
-- SPY 1M Return: 1.99%
-- XLK 3M Return: 30.46%
-- SPY 3M Return: 10.56%
-- XLK 3M Excess Return: 19.90%
+- Latest Date: 2026-07-13
+- XLK 1M Return: -1.05%
+- SPY 1M Return: 1.55%
+- XLK 3M Return: 24.50%
+- SPY 3M Return: 9.19%
+- XLK 3M Excess Return: 15.30%
 
 3. Risk Comparison
-- XLK Annualized Volatility: 32.28%
-- SPY Annualized Volatility: 13.04%
-- XLK Volatility Premium: 19.25%
+- XLK Annualized Volatility: 32.79%
+- SPY Annualized Volatility: 13.15%
+- XLK Volatility Premium: 19.64%
 - XLK 3M Max Drawdown: -10.89%
 - SPY 3M Max Drawdown: -4.49%
 - Drawdown Gap: -6.39%
 
 4. Growth Sleeve Assessment
-- Growth Sleeve Score: 71.48/100
+- Growth Sleeve Score: 62.76/100
 - Growth Sleeve Risk Flag: High Growth Risk
-- Tactical Growth Stance: Constructive Growth Sleeve
+- Tactical Growth Stance: Neutral Growth Sleeve
 
 5. Interpretation
 Strong growth rebound, but drawdown risk remains elevated.

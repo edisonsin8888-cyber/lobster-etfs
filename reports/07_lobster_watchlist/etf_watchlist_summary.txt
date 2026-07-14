@@ -4,9 +4,9 @@ Watchlist:
 SPY, QQQ, GLD, TLT, XLK
 
 Top-Level ETF Signals:
-- Best 3M performer: XLK (30.46%)
-- Weakest 3M performer: GLD (-13.64%)
-- Highest volatility ETF: XLK (32.28%)
+- Best 3M performer: XLK (24.50%)
+- Weakest 3M performer: GLD (-15.67%)
+- Highest volatility ETF: XLK (32.79%)
 
 GLD Watchlist Role:
 - Role Tag: Defensive Diversification Sleeve

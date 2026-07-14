@@ -16,7 +16,6 @@ AGENT_STEPS = [
     ("System Status Agent", "scripts/lobster_system_status.py"),
     ("Research Task Generator", "scripts/lobster_research_tasks.py"),
     ("Notification Agent", "scripts/notification_agent.py"),
-    ("Email Notification Agent", "scripts/email_notification_agent.py"),
 ]
 
 

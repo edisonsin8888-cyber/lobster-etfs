@@ -5,9 +5,9 @@ Lobster Research Router v2
 - Role Tag: Defensive Diversification Sleeve
 - Research Priority: High
 - ETF Stance: Defensive
-- Final ETF Score: 29.79/100
+- Final ETF Score: 28.94/100
 - Deep-Dive Status: Completed Deep-Dive Module
-- Router v2 Score: 101.43
+- Router v2 Score: 101.13
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. Ranked Research Queue
@@ -15,65 +15,65 @@ Lobster Research Router v2
 - Role Tag: Defensive Diversification Sleeve
 - Research Priority: High
 - ETF Stance: Defensive
-- Final ETF Score: 29.79/100
+- Final ETF Score: 28.94/100
 - Momentum Flag: Weak
 - Risk Flag: High Risk
-- 3M Return: -13.64%
+- 3M Return: -15.67%
 - 3M Max Drawdown: -17.94%
 - Deep-Dive Status: Completed Deep-Dive Module
-- Router v2 Score: 101.43
+- Router v2 Score: 101.13
 - Router Reason: high watchlist priority, weak ETF score requiring review, weak momentum, elevated risk, negative 3M return, completed Gold Engine available
 
 2. XLK
 - Role Tag: Growth / Sector Sleeve
 - Research Priority: Medium
 - ETF Stance: Neutral
-- Final ETF Score: 65.97/100
+- Final ETF Score: 65.72/100
 - Momentum Flag: Strong
 - Risk Flag: High Risk
-- 3M Return: 30.46%
+- 3M Return: 24.50%
 - 3M Max Drawdown: -10.89%
 - Deep-Dive Status: Light Deep-Dive Candidate
-- Router v2 Score: 85.09
+- Router v2 Score: 85.00
 - Router Reason: strong momentum, elevated risk, growth-sleeve monitor candidate
 
 3. QQQ
 - Role Tag: Growth / Sector Sleeve
 - Research Priority: Medium
 - ETF Stance: Constructive
-- Final ETF Score: 74.13/100
+- Final ETF Score: 73.85/100
 - Momentum Flag: Strong
 - Risk Flag: Normal
-- 3M Return: 18.53%
+- 3M Return: 15.28%
 - 3M Max Drawdown: -7.03%
 - Deep-Dive Status: Future Growth Module Candidate
-- Router v2 Score: 80.94
+- Router v2 Score: 80.85
 - Router Reason: strong ETF score, strong momentum
 
 4. TLT
 - Role Tag: Rate-Sensitive Defensive Sleeve
 - Research Priority: Medium
 - ETF Stance: Neutral
-- Final ETF Score: 61.37/100
+- Final ETF Score: 60.18/100
 - Momentum Flag: Weak
 - Risk Flag: Defensive
-- 3M Return: -2.55%
+- 3M Return: -3.20%
 - 3M Max Drawdown: -4.80%
 - Deep-Dive Status: Future Defensive Module Candidate
-- Router v2 Score: 77.48
+- Router v2 Score: 77.06
 - Router Reason: weak momentum, negative 3M return
 
 5. SPY
 - Role Tag: Core Equity Sleeve
 - Research Priority: Low
 - ETF Stance: Constructive
-- Final ETF Score: 75.46/100
+- Final ETF Score: 74.80/100
 - Momentum Flag: Strong
 - Risk Flag: Defensive
-- 3M Return: 10.56%
+- 3M Return: 9.19%
 - 3M Max Drawdown: -4.49%
 - Deep-Dive Status: Benchmark / Core Reference
-- Router v2 Score: 52.41
+- Router v2 Score: 52.18
 - Router Reason: strong ETF score, strong momentum
 
 3. Router v2 Interpretation

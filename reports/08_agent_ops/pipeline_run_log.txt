@@ -1,5 +1,5 @@
 Lobster Pipeline Run Logger
-Start Time: 2026-07-10 20:00:19
+Start Time: 2026-07-14 15:43:57
 
 Command:
 python scripts/run_all.py
@@ -7,10 +7,16 @@ python scripts/run_all.py
 Pipeline Status:
 Passed
 
-End Time: 2026-07-10 20:00:23
-Duration Seconds: 3.29
+End Time: 2026-07-14 15:44:01
+Duration Seconds: 3.92
 
 STDOUT:
+
+Running: Data Quality Check
+Completed: Data Quality Check
+
+Running: Market Regime Analysis
+Completed: Market Regime Analysis
 
 Running: Gold Diversification Score
 Completed: Gold Diversification Score
@@ -23,6 +29,12 @@ Completed: AI Risk Monitor
 
 Running: Allocation History Tracker
 Completed: Allocation History Tracker
+
+Running: Decision Boundary Explorer
+Completed: Decision Boundary Explorer
+
+Running: AI-Readable Research Packet
+Completed: AI-Readable Research Packet
 
 Running: Gold Signal Dashboard
 Completed: Gold Signal Dashboard
@@ -67,6 +79,8 @@ OK: reports/06_score_and_monitor/ai_risk_monitor_report.txt
 OK: reports/weekly_reports/gold_weekly_memo.txt
 OK: reports/06_score_and_monitor/allocation_history.csv
 OK: reports/06_score_and_monitor/allocation_history_summary.txt
+OK: reports/07_ai_research/decision_boundary_explorer.json
+OK: reports/07_ai_research/research_packet.json
 OK: reports/06_score_and_monitor/gold_signal_dashboard.txt
 OK: reports/06_score_and_monitor/gold_div_score_history.png
 OK: reports/06_score_and_monitor/allocation_guidance_history.png

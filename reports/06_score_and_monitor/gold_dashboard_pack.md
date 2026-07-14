@@ -21,8 +21,8 @@ The current allocation stance is constrained mainly by elevated alert level, wea
 
 ## 5. Historical Allocation Evidence
 - Latest historical date: 2026-07-31
-- Historical gold diversification score: 40.33/100
-- Historical status: Mixed
+- Historical gold diversification score: 40.00/100
+- Historical status: Weak
 - Historical alert level: Red
 - Historical average GLD-equity correlation: 0.38
 - Historical GLD/SPY volatility ratio: 2.38

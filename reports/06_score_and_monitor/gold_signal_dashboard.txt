@@ -21,15 +21,15 @@ The defensive allocation view is mainly driven by elevated alert level, low allo
 
 5. Latest Historical Allocation Snapshot
 - Historical Date: 2026-07-31
-- Historical Gold Diversification Score: 40.33/100
-- Historical Status: Mixed
+- Historical Gold Diversification Score: 40.00/100
+- Historical Status: Weak
 - Historical Alert Level: Red
 - Historical Average GLD-equity Correlation: 0.38
 - Historical GLD/SPY Volatility Ratio: 2.38
 - Historical Stress Return Gap: -0.00%
 
 6. Historical Trend Diagnostics
-- One-month historical score change: 1.29
+- One-month historical score change: 0.96
 - One-month allocation guidance score change: 0.00
 - Previous strategic range: 0%–5%
 - Current strategic range: 0%–5%

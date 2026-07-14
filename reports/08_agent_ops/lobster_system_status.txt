@@ -1,5 +1,5 @@
 Lobster System Status Agent
-Run Time: 2026-07-10 20:00:23
+Run Time: 2026-07-14 15:44:01
 
 System Status: Healthy
 - OK Files: 23
@@ -7,26 +7,26 @@ System Status: Healthy
 - Missing Files: 0
 
 Critical Output Check
-- OK: reports/08_agent_ops/data_update_log.txt (687 bytes)
+- OK: reports/08_agent_ops/data_update_log.txt (734 bytes)
 - OK: reports/08_agent_ops/data_quality_report.csv (315 bytes)
 - OK: reports/08_agent_ops/data_quality_summary.txt (498 bytes)
-- OK: reports/08_agent_ops/pipeline_run_log.txt (2876 bytes)
+- OK: reports/08_agent_ops/pipeline_run_log.txt (3261 bytes)
 - OK: reports/06_score_and_monitor/gold_diversification_score.csv (351 bytes)
 - OK: reports/06_score_and_monitor/diversification_alert.txt (941 bytes)
 - OK: reports/06_score_and_monitor/ai_risk_monitor_report.txt (1952 bytes)
-- OK: reports/06_score_and_monitor/allocation_history.csv (8327 bytes)
-- OK: reports/06_score_and_monitor/allocation_history_summary.txt (1215 bytes)
-- OK: reports/06_score_and_monitor/gold_signal_dashboard.txt (1493 bytes)
-- OK: reports/06_score_and_monitor/gold_dashboard_pack.md (2813 bytes)
-- OK: reports/06_score_and_monitor/gold_div_score_history.png (189394 bytes)
-- OK: reports/06_score_and_monitor/allocation_guidance_history.png (133104 bytes)
-- OK: reports/06_score_and_monitor/gld_risk_budget_curve.png (134942 bytes)
-- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1610 bytes)
+- OK: reports/06_score_and_monitor/allocation_history.csv (8328 bytes)
+- OK: reports/06_score_and_monitor/allocation_history_summary.txt (1214 bytes)
+- OK: reports/06_score_and_monitor/gold_signal_dashboard.txt (1492 bytes)
+- OK: reports/06_score_and_monitor/gold_dashboard_pack.md (2812 bytes)
+- OK: reports/06_score_and_monitor/gold_div_score_history.png (188533 bytes)
+- OK: reports/06_score_and_monitor/allocation_guidance_history.png (132689 bytes)
+- OK: reports/06_score_and_monitor/gld_risk_budget_curve.png (134509 bytes)
+- OK: reports/07_lobster_watchlist/etf_watchlist_snapshot.csv (1611 bytes)
 - OK: reports/07_lobster_watchlist/etf_watchlist_summary.txt (608 bytes)
-- OK: reports/07_lobster_watchlist/etf_score_table.csv (1243 bytes)
+- OK: reports/07_lobster_watchlist/etf_score_table.csv (1257 bytes)
 - OK: reports/07_lobster_watchlist/etf_score_summary.txt (880 bytes)
-- OK: reports/07_lobster_watchlist/lobster_dashboard.txt (1765 bytes)
-- OK: reports/07_lobster_watchlist/lobster_research_router.txt (2815 bytes)
-- OK: reports/07_lobster_watchlist/lobster_weekly_memo.txt (2920 bytes)
+- OK: reports/07_lobster_watchlist/lobster_dashboard.txt (1759 bytes)
+- OK: reports/07_lobster_watchlist/lobster_research_router.txt (2814 bytes)
+- OK: reports/07_lobster_watchlist/lobster_weekly_memo.txt (2914 bytes)
 - OK: reports/08_growth_sleeve/xlk_vs_spy_summary.csv (615 bytes)
-- OK: reports/08_growth_sleeve/xlk_growth_monitor.txt (1014 bytes)
+- OK: reports/08_growth_sleeve/xlk_growth_monitor.txt (1009 bytes)
